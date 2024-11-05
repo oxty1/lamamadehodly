@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 * {
     margin: 0;
     /* height: 100%; */
     width: 100%;
-    font-family: 'Arial Narrow', fantasy, san-serif;
+    font-family: Oswald, 'Arial Narrow', fantasy, san-serif;
     align-items: center;
     text-align: center;
     box-sizing: border-box;
