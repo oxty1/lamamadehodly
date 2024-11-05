@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial Narrow', fantasy, san-serif;
+    align-items: center;
+}
+  h1 {
+    justify-content: center;
+    display: flex;
+}
