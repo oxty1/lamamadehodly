@@ -11,7 +11,7 @@
     color: beige;
     padding: 10px 0;
 }
-html, body { height: 100%; }
+html, body { height: 100vh; }
 
 body {
   background-color: #000;
@@ -61,4 +61,41 @@ span {
   right: 10px;
   line-height: 1;
   transform: rotate(-15deg);
+}
+
+#images {
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  border: 1px solid #211f1f;
+
+  & img {
+    margin: 0 auto;
+    max-width: 150px;
+    height: 320px;
+
+    -webkit-animation: slide-top 1s linear infinite alternate-reverse ;
+	        animation: slide-top 1s linear infinite alternate-reverse ;
+  }
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateX(100);
+            transform: translateX(100);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
 }
