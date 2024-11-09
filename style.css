@@ -2,7 +2,6 @@
 
 * {
     margin: 0;
-    /* height: 100%; */
     width: 100%;
     font-family: Oswald, 'Arial Narrow', fantasy, san-serif;
     align-items: center;
@@ -68,6 +67,7 @@ span {
   width: 90vw;
   display: flex;
   border: 1px solid #211f1f;
+  position: relative;
 
   & img {
     margin: 0 auto;
@@ -76,6 +76,25 @@ span {
 
     -webkit-animation: slide-top 1s linear infinite alternate-reverse ;
 	        animation: slide-top 1s linear infinite alternate-reverse ;
+  }
+}
+
+button {
+  position: absolute;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  right: 20px;
+
+  & svg {
+    height: 64px;
   }
 }
 
